@@ -14,7 +14,7 @@ We want to obtain the following information:
   <li>Plot total number of measurements and distribution of male and female mice </li>
   <li>Get the outliers for each drug regimen and plot them</li>
   <li>Get the Trend of tumor volume at diverse timepoints</li>
-  <li>Find if there's a correlation between mouse weight and tumor volume and obtain the equation that can  explain it</li>
+  <li>Find if there's a correlation between mouse weight and tumor volume and obtain the equation that can explain it</li>
 </ul>
 
 ### The Process
@@ -44,5 +44,32 @@ We found that the distribution of female and male mice was almost even
 Also, we found that the most used drugs were Capomulin and Ramicane
 
 ![](Reference_Images/Plot_summary_Statistics.png)
+
+#### Get the outliers for each drug regimen and plot them
+
+After filtering the last timepoint on each mouse with their belonging drug regimen, we got the last tumor size. With that information the data was processed with quartiles and obtained the the lower bound and upper bound to find potential outliers. The results were the following>
+
+![](Reference_Images/Boxplot.png)
+
+#### Get the Trend of tumor volume at diverse timepoints
+
+After choosing a mouse we got the trend of Tumor Volume against the timepoints. This in order to see how steep the trend was.
+
+![](Reference_Images/Tumor_Volume_Trend.png)
+
+#### Find if there's a correlation between mouse weight and tumor volume and obtain the equation that can explain it
+
+We found that the tumor volume was positively correlated with the mouseweight at **0.85**. Also, the linear regression equation to express this was **y = 1.72x + 2.0** 
+
+![](Reference_Images/Corr_and_Reg.png)
+
+
+
+
+
+
+
+
+
 
 
